@@ -1,0 +1,66 @@
+{
+  "cli": {
+    "version": ">= 12.3.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      },
+      "env": {
+        "APP_ENV": "development",
+        "API_URL": "https://qawallet.copayment.com.mx/wallet/",
+        "API_KEY": "mEPSoMHsgT6HvzQt9DUqAggSmTfE3EUTu3D7+sv/raz14LhZxw==",
+        "API_KEY_CARNET":"mEPSoMHsgT6HvzQt9DUqAggSmTfE3EUTu3D7+sv/raz14LhZxw==",
+        "API_KEY_VISA":"n0PHpsLs9AWrggGsXdouri7OKSHHLgZS4KSJ",
+        "URL_AVISOP":"https://copayment.com.mx/aviso-de-privacidad/"
+      }
+    },
+    "apkqa": {
+      "distribution": "internal",
+      "channel": "preview",
+      "android": {
+        "buildType": "apk",
+       "env": {
+        "APP_ENV": "development",
+        "API_URL": "https://qawallet.copayment.com.mx/wallet/",
+        "API_KEY": "mEPSoMHsgT6HvzQt9DUqAggSmTfE3EUTu3D7+sv/raz14LhZxw=="
+      }
+      }
+    },
+    "production": {
+      
+      "env": {
+        "APP_ENV": "production",
+        "API_URL":"https://wallet.copayment.com.mx/wallet/",
+        "API_KEY_CARNET":"mEPSoMHsgT6HvzQt9DUqAggSmTfE3EUTu3D7+sv/raz14LhZxw==",
+        "API_KEY_VISA":"n0PHpsLs9AWrggGsXdouri7OKSHHLgZS4KSJ",
+        "URL_AVISOP":"https://copayment.com.mx/aviso-de-privacidad/"
+      }
+,
+      "distribution": "store",
+      "android": {
+        "buildType": "app-bundle",
+        "credentialsSource": "local"
+
+      }, "ios": {
+        "credentialsSource": "local",
+        "simulator": false
+      }
+    }
+  },  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "copayment.mexico@copayment.com.mx",
+        "ascAppId": "1588981475",
+        "appleTeamId": "4R2S93L689"
+      }
+    }
+  }
+}

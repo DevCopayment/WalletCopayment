@@ -1,28 +1,47 @@
 {
   "expo": {
-    "name": "copaymentWallet",
-    "slug": "copaymentWallet",
-    "version": "1.0.0",
+    "name": "Copayment",
+    "slug": "copayment-wallet",
+    "version": "6.0.3",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icono.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "scheme": "copayment",
+    "newArchEnabled": false,
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
+      "image": "./assets/images/adaptive-icon.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+       "bundleIdentifier": "com.Copayment.CopaymentWalletV1",
+      "buildNumber": "9"
     },
     "android": {
+      "softwareKeyboardLayoutMode": "resize",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icono.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      
+      "permissions": [
+      
+        
+      ],
+      "package": "mx.com.copayment.Copayment",
+      "versionCode": 9
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "assetBundlePatterns": [
+      "**/*",
+      "assets/fonts/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d3a64f8a-af60-4a09-9f26-0f6ab8a37501"
+      }
+    },  "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }
